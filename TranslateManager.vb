@@ -175,9 +175,9 @@ Namespace gozeer.translate
                     End If
 
                 Next
-                Return String.Format("$translate(key:'{0}',default:'{1}',parameters:'{2}'", Key, DefaultValue, sb.ToString)
+                Return String.Format("$translate(key:'{0}',default:'{1}',parameters:'{2}');", Key, DefaultValue, sb.ToString)
             Else
-                Return String.Format("$translate(key:'{0}',default:'{1}'", Key, DefaultValue)
+                Return String.Format("$translate(key:'{0}',default:'{1}');", Key, DefaultValue)
             End If
 
         End Function
